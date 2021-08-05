@@ -8,7 +8,7 @@ class Tamagotchi {
     this.age=age
 }
 logSubmit() {
-    log.textContent = "Hi! I'm "
+ 
 }
 feedPet() {
 
