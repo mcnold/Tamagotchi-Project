@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    
     <header>
-        <form>
-            <label for="name">Kittygotchi</label><br>
-            <input type="text" id="Tamagotchi-name" name="name" value="Enter Name Here"<br><br>
-            <input type="submit" id="submit" value="Submit your pet's name">
-        </form>
+            <label>Kittygotchi</label><br>
+            <input type="text" id="Tamagotchi-name" value="Enter Name Here"><br>
+            <button id="submit">Submit your pet's name</button>
     </header>
-    <script type="text/javascript" src="JS/app.js"></script>
+
     <div id="metrics-box">Health Score
-        <div id="Hunger">Hunger:</div>
-        <div id="Sleepiness">Sleepiness:</div>
-        <div id="Boredom">Boredom:</div>
-        <div id="Age">Age:</div>
+        <div id="Hunger">Hunger:<span id="hunger">0</span></div>
+        <div id="Sleepiness">Sleepiness:<span id="sleepiness"> 0</span></div>
+        <div id="Boredom">Boredom:<span id="boredom"> 0</span></div>
+        <div id="Age">Age:<span id="age"> 0</span></div>
         <div class="speech">Hi There!</div>
+   
     </div> 
     <div>
         <div id="background-wrap">
@@ -41,24 +41,22 @@
                 <div class="cloud"></div> 
             </div>               
     </div>
-  
+
     <img src="Images/cartoon-house-transparent-20.png"id="house" alt="Kitty's House">
     <img src="Images/grass-png-transparent-23.png" id="lawn" alt="lawn">
-    <img src="Images/greeting.png" id="greeting" alt="Greetings">
- 
+    <img src="Images/greeting.png" id="kitty" alt="Kitty">
 </div>
 <div id="buttons">
-    <button id="Feed Me">Feed Me</button>
-    <button id="Pet Me">Pet Me</button>
-    <button id="Put-Me-To-Bed">Put Me To Bed</button>
-    <button id="Turn-off-lights">Turn Lights Off</button>
-    <button id="Make-Me-Older">Make Me Older</button>
-    <button id="Play-With-Me">Play With Me</button>
-    <br>
+    <button id="feed-Me">Feed Me</button>
+    <button id="pet-Me">Pet Me</button>
+    <button id="put-Me-To-Bed">Put Me To Bed</button>
+    <!-- <button id="turn-Off-Lights">Light Switch</button?> -->
+    <button id="make-Me-Older">Make Me Older</button>
+    <button id="play-With-Me">Play With Me</button>
 </div>
 
 
-
+<script type="text/javascript" src="JS/app.js"></script>
 </body>
 
 </html>

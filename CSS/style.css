@@ -20,19 +20,26 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    margin: 5px;
+    padding: 0px;
     font-family: fantasy;
     size: 200%;
 }
-
-#greeting {
+@keyframes animateKitty {
+    0%{margin-right: -25px}
+    25%{margin-right: 20%;}
+}
+#kitty {
    position: relative;
     display: flex;
     flex-grow: 3;
     margin-left: auto;
-    top: 200px;
+    top: 250px;
     bottom: 0px;
     width: 300px;
     height: 300px;
+    animation: animateKitty 40s linear infinite;
+
 }
 
 @keyframes animateCloud
@@ -42,23 +49,23 @@ body {
 }
 
 .x1 {
-    animation: animateCloud 60s linear infinite;
+    animation: animateCloud 120s linear infinite;
     transform: scale(0.65);
 }
 .x2 {
-    animation: animateCloud 40s linear infinite;
+    animation: animateCloud 80s linear infinite;
     transform: scale(0.3);
 }
 .x3 {
-    animation: animateCloud 90s linear infinite;
+    animation: animateCloud 180s linear infinite;
     transform: scale(0.5);
 }
 .x4 {
-    animation: animateCloud 45s linear infinite;
+    animation: animateCloud 90s linear infinite;
     transform: scale(0.4);
 }
 .x5 {
-    animation: animateCloud 50s linear infinite;
+    animation: animateCloud 100s linear infinite;
     transform: scale(0.55);
 }
 .cloud {
@@ -108,29 +115,33 @@ body {
 #metrics-box {
     position: absolute;
     top: 30px;
-    right: 25px;
+    right: 20px;
     height: 200px;
     width: 500px;
     background-color:black;
-    color:blanchedalmond;
+    color:white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     text-align: left;
 }
+span {
+    color: lightgreen;
+    padding: 10px;
+}
 #Hunger {
-    text-align: center;
+    text-align: right;
 
 }
 #Sleepiness {
-    text-align: center;
+    text-align: right;
 
 }
 #Boredom {
-    text-align: center;
+    text-align: right;
 
 }
 #Age {
-    text-align: center;
+    text-align: right;
 
 }
 
