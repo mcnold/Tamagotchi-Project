@@ -27,7 +27,7 @@ body {
 }
 @keyframes animateKitty {
     0%{margin-right: -25px}
-    25%{margin-right: 20%;}
+    25%{margin-right: 30%;}
 }
 #kitty {
    position: relative;
@@ -103,6 +103,8 @@ body {
      position: absolute;
      bottom: 0;
      right: 10;
+     width: 650px;
+     height: 650px;
  }
 #lawn {
     position:absolute;
