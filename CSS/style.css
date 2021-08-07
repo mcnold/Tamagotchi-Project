@@ -34,12 +34,12 @@ body {
     display: flex;
     flex-grow: 3;
     margin-left: auto;
-    top: 250px;
+    top: 300px;
     bottom: 0px;
     width: 300px;
     height: 300px;
     animation: animateKitty 40s linear infinite;
-
+    transition: width 1s ease, height 1s ease;
 }
 
 @keyframes animateCloud
