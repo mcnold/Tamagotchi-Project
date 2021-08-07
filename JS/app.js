@@ -58,7 +58,7 @@ class Tamagotchi {
             const ageElement =  document.querySelector('#age')
             ageElement.innerText= `${this.age}`
             this.age++
-                if (this.age>3) {
+                if (this.age>5) {
                     this.endGame()
                 }
         }, 15000)
